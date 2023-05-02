@@ -1,0 +1,18 @@
+#include<stdio.h>
+double min(double x, double y);
+int main()
+{
+    double i, j;
+    printf("请输入两个值");
+    scanf_s("%lf%lf", &i, &j);
+    double m = min(i, j);
+    printf("最小值为%lf\n", m);
+    return 0;
+}
+double min(double x, double y)
+{
+    if (x > y)
+        return y;
+    else
+        return x;
+}
