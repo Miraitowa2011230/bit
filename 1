@@ -1,0 +1,20 @@
+#include<stdio.h>
+double min(double x, double y);
+int main(void)
+{
+    double mi, max, i, j;
+    double m, n, x;
+    printf("请输入四位小数");
+    scanf_s("%lf%lf%lf%lf", &mi, &max, &i, &j);
+    m = min (mi, max);
+    n = min(i, j);
+    x = min(m, n);
+    printf("四位小数中最小数为%lf", x);
+    return 0;
+}double min(double x, double y)
+{
+    if (x > y)
+        return y;
+    else
+        return x;
+}
